@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyUp Event Function</title>
+</head>
+<body>
+    <!-- Textbox to trigger the keyup event -->
+    <input type="text" id="myTextBox" placeholder="Type something...">
+
+    <script>
+        // Define the function myfunc
+        function myfunc() {
+            // Print test data to the console
+            console.log("test data");
+        }
+
+        // Attach the keyup event to the textbox and call myfunc on keyup
+        document.getElementById("myTextBox").addEventListener("keyup", myfunc);
+    </script>
+</body>
+</html>

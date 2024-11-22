@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Transform</title>
+</head>
+<body>
+    <!-- Textbox for entering text -->
+    <input type="text" id="textInput" placeholder="Enter some text">
+
+    <!-- Paragraphs to display transformed text -->
+    <p id="para1">Uppercase: </p>
+    <p id="para2">Lowercase: </p>
+
+    <script>
+        // Select the textbox and paragraphs
+        const textInput = document.getElementById("textInput");
+        const para1 = document.getElementById("para1");
+        const para2 = document.getElementById("para2");
+
+        // Add an onkeyup event listener to the textbox
+        textInput.addEventListener("keyup", function() {
+            // Get the current value of the textbox
+            const text = textInput.value;
+
+            // Display the text in uppercase and lowercase in the paragraphs
+            para1.textContent = "Uppercase: " + text.toUpperCase();
+            para2.textContent = "Lowercase: " + text.toLowerCase();
+        });
+    </script>
+</body>
+</html>

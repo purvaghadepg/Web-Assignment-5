@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Two Values</title>
+</head>
+<body>
+
+    <!-- Textbox 1 with id txt1 -->
+    <input type="text" id="txt1" placeholder="Enter first number">
+    
+    <!-- Textbox 2 with id txt2 -->
+    <input type="text" id="txt2" placeholder="Enter second number">
+    
+    <!-- Button to trigger the sum calculation -->
+    <button onclick="calculateSum()">Calculate Sum</button>
+    
+    <!-- Paragraph to display the sum result -->
+    <p id="para"></p>
+
+    <script>
+        // Function to get values from textboxes, check data type, and show sum
+        function calculateSum() {
+            // Get the values of both textboxes
+            var data1 = document.getElementById('txt1').value;
+            var data2 = document.getElementById('txt2').value;
+            
+            // Check if both data1 and data2 are valid numbers
+            if (!isNaN(data1) && !isNaN(data2)) {
+                // Convert values to numbers for calculation
+                data1 = Number(data1);
+                data2 = Number(data2);
+                
+                // Calculate the sum
+                var sum = data1 + data2;
+                
+                // Display the sum in the paragraph with id 'para'
+                document.getElementById('para').innerHTML = "The sum is: " + sum;
+            } else {
+                // Display an error message if the inputs are not valid numbers
+                document.getElementById('para').innerHTML = "Please enter valid numbers in both textboxes.";
+            }
+        }
+    </script>
+
+</body>
+</html>

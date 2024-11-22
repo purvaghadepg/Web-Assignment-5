@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check for Number</title>
+</head>
+<body>
+
+    <!-- Create a textbox with id 'txt' -->
+    <input type="text" id="txt" placeholder="Enter a number">
+    
+    <!-- Create a button to trigger the check -->
+    <button onclick="checkIfNumber()">Check Value</button>
+
+    <!-- Paragraph to show error message -->
+    <p id="error"></p>
+
+    <script>
+        // Function to check if the entered value is a number
+        function checkIfNumber() {
+            var value = document.getElementById('txt').value;  // Get the value from the textbox
+            
+            // Check if the value is a valid number
+            if (isNaN(value) || value === "") {
+                // If it's not a number, show an error message
+                document.getElementById('error').innerHTML = "Error: Only numbers are allowed.";
+            } else {
+                // Clear error message if the input is a valid number
+                document.getElementById('error').innerHTML = "";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color on Hover</title>
+    <style>
+        /* Initial color of the paragraph */
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Paragraph with some dummy content -->
+    <p id="para" onmouseover="changeToGrey()" onmouseout="changeToBlue()">This is some dummy content in the paragraph.</p>
+
+    <script>
+        // Function to change the paragraph color to grey on hover
+        function changeToGrey() {
+            document.getElementById("para").style.color = "grey";
+        }
+
+        // Function to change the paragraph color back to blue on mouse out
+        function changeToBlue() {
+            document.getElementById("para").style.color = "blue";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Paragraph Content on Mouse Over</title>
+</head>
+<body>
+    <!-- Paragraph with some dummy content -->
+    <p id="para" onmouseover="changeContent()">This is some dummy content in the paragraph.</p>
+
+    <script>
+        // Define the function to change the paragraph content on mouse over
+        function changeContent() {
+            // Change the content of the paragraph
+            document.getElementById("para").innerHTML = "The content has been changed on mouse over!";
+        }
+    </script>
+</body>
+</html>

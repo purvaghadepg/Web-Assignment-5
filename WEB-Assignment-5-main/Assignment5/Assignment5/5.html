@@ -1,0 +1,17 @@
+<h2>Move your mouse around!</h2>
+    <p id="coordinates">X: 0, Y: 0</p>
+
+    <script>
+        // Select the paragraph element to display coordinates
+        const coordinatesDisplay = document.getElementById("coordinates");
+
+        // Add mousemove event listener to the document
+        document.addEventListener("mousemove", function(event) {
+            // Get the X and Y coordinates
+            const x = event.clientX;
+            const y = event.clientY;
+
+            // Display the coordinates in the paragraph
+            coordinatesDisplay.textContent = `X: ${x}, Y: ${y}`;
+        });
+    </script>

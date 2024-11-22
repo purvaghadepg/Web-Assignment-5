@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Paragraph Content</title>
+</head>
+<body>
+    <!-- Paragraph with some dummy content -->
+    <p id="para">This is some dummy content in the paragraph.</p>
+
+    <!-- Button to change the paragraph content -->
+    <button onclick="changeContent()">Change Paragraph Content</button>
+
+    <script>
+        // Define the function to change the paragraph content
+        function changeContent() {
+            // Use querySelector to select the paragraph by its id and change the content using innerHTML
+            document.querySelector("#para").innerHTML = "The paragraph content has been changed!";
+        }
+    </script>
+</body>
+</html>

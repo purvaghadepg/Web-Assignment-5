@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbox Value</title>
+</head>
+<body>
+    <!-- Create a textbox with id 'txt' -->
+    <input type="text" id="txt" placeholder="Enter a value">
+    
+    <!-- Create a button and assign an onclick event -->
+    <button onclick="getValue()">Get Value</button>
+
+    <script>
+        // Function to get the value from the textbox and show it in the console
+        function getValue() {
+            var textboxValue = document.getElementById('txt').value;  // Get the value of the textbox
+            console.log('Value from textbox: ' + textboxValue);  // Log the value to the console
+        }
+    </script>
+</body>
+</html>

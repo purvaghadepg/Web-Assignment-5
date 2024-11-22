@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Value Type</title>
+</head>
+<body>
+
+    <!-- Create a textbox with id 'txt' -->
+    <input type="text" id="txt" placeholder="Enter something">
+    
+    <!-- Create a button to check the value type -->
+    <button onclick="checkValueType()">Check Type</button>
+
+    <script>
+        // Function to check if the entered value is a number or string
+        function checkValueType() {
+            // Get the value from the textbox
+            var value = document.getElementById('txt').value;
+            
+            // Check if the value is a number or a string
+            if (isNaN(value)) {
+                // If it's not a number, it's a string
+                console.log('The entered value is a string.');
+            } else {
+                // If it's a number, show it as a number
+                console.log('The entered value is a number.');
+            }
+        }
+    </script>
+
+</body>
+</html>

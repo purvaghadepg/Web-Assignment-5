@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover and Mouseout Background Color</title>
+</head>
+<body>
+    <!-- Paragraph with mouseover and mouseout effects -->
+    <p id="hoverParagraph">Hover over this text to see the background color change!</p>
+
+    <script>
+        // Select the paragraph element
+        const paragraph = document.getElementById("hoverParagraph");
+
+        // Apply background color on mouseover
+        paragraph.addEventListener("mouseover", function() {
+            paragraph.style.backgroundColor = "grey";
+        });
+
+        // Revert background color on mouseout
+        paragraph.addEventListener("mouseout", function() {
+            paragraph.style.backgroundColor = "lightgrey";
+        });
+    </script>
+</body>
+</html>

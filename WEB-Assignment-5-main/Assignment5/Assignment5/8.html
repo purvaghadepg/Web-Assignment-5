@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Function Example</title>
+</head>
+<body>
+    <!-- Textbox to trigger onblur and onfocus events -->
+    <input type="text" id="textBox" placeholder="Focus or leave this box">
+
+    <script>
+        // Anonymous function assigned to a variable 'calculate'
+        const calculate = function() {
+            console.log("This is a dummy text from the calculate function.");
+        };
+
+        // Select the textbox
+        const textBox = document.getElementById("textBox");
+
+        // Call calculate function on blur
+        textBox.addEventListener("blur", calculate);
+
+        // Call calculate function on focus
+        textBox.addEventListener("focus", calculate);
+    </script>
+</body>
+</html>
